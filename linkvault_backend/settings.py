@@ -73,7 +73,10 @@ SIMPLE_JWT = {
     "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
 }
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://irtibat-frontendd.vercel.app",
+    "http://localhost:5173",
+]
 
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = "UTC"
